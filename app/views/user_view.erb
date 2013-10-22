@@ -1,0 +1,7 @@
+<div class="container">
+  <h1><%=params[:username]%> Timeline!</h1>
+
+  <% @user.each do |text| %>
+    <ol><%= text.text %></ol>
+  <% end %>
+</div>
